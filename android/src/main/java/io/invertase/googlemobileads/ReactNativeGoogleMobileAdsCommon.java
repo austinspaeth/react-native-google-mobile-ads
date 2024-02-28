@@ -54,7 +54,7 @@ public class ReactNativeGoogleMobileAdsCommon {
 
       if ("INLINE_ADAPTIVE_BANNER".equals(preDefinedAdSize)) {
         return AdSize.getInlineAdaptiveBannerAdSize(
-            adWidth - 44, 50);
+            adWidth - 44, 60);
       }
       return AdSize.getCurrentOrientationAnchoredAdaptiveBannerAdSize(
           reactViewGroup.getContext(), adWidth);
