@@ -206,7 +206,7 @@ NSString *const GOOGLE_MOBILE_ADS_EVENT_REWARDED_EARNED_REWARD = @"rewarded_earn
     }
     CGFloat viewWidth = frame.size.width;
     if ([value isEqualToString:@"INLINE_ADAPTIVE_BANNER"]) {
-      return GADCurrentOrientationInlineAdaptiveBannerAdSizeWithWidth(viewWidth);
+      return GADInlineAdaptiveBannerAdSizeWithWidthAndMaxHeight(viewWidth - 20, 100);
     }
     return GADCurrentOrientationAnchoredAdaptiveBannerAdSizeWithWidth(viewWidth);
   } else {
